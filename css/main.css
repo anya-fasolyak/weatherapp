@@ -1,4 +1,147 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
+
+
+/*Type Styles*/
+
+.temperature {
+    font-size: 8em;
+}
+
+.weather {
+    font-size: 8em;
+}
+
+#temp {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+#temp-max, #temp-min {
+    font-size: 1.5em;
+}
+
+#condition {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+#condition-description, #wind-speed {
+    font-size: 1.5em;
+}
+
+
+/*Positioning*/
+
+.weatherbox {
+    margin-left: 16em;
+}
+
+/*Decor*/
+
+.cold {
+    background-image: linear-gradient(45deg, #083d60, #c9e9fc);
+    color: #445c75;
+}
+
+
+.warm {
+    background-image: linear-gradient(45deg, #0bbbe8, #fcf820);
+    color: #57a7d6
+}
+
+
+.hot {
+    background-image: linear-gradient(45deg, #f7005a, #f2de00);
+    color: #f91d04;
+}
+
+.snow {
+    background-image: linear-gradient(45deg, #f2f8ff, #ddedff);
+    color: #dae4ef;    
+}
+
+
+/*Media Queries */
+
+@media all and (max-width: 841px) {
+    
+.temperature {
+    font-size: 3em;
+}
+
+.weather {
+    font-size: 3em;
+    margin-top: -.5em;
+}
+  
+.weatherbox {
+    margin-top: 2em;
+    margin-left: 0em;
+}
+  
+.temp-copy {
+    margin-top: 5em;
+    margin-left: -18.5em;
+}
+    
+.weather-copy {
+margin-top: 1em;
+margin-left: -12.5em;
+}
+    
+/*type */
+    
+#temp {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#temp-max, #temp-min {
+    font-size: 1.5em;
+}
+
+#condition {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#condition-description, #wind-speed {
+    font-size: 1.5em;
+}
  
+    
+/*decor */
+    .cold {
+    background-image: linear-gradient(45deg, #c9e9fc, #083d60);
+    color: #445c75;
+}
+
+
+.warm {
+    background-image: linear-gradient(45deg, #fcf820, #0bbbe8);
+    color: #57a7d6
+}
+
+
+.hot {
+    background-image: linear-gradient(45deg, #f2de00, #f7005a);
+    color: #f91d04;
+}
+
+.snow {
+    background-image: linear-gradient(45deg, #ddedff, #f2f8ff);
+    color: #dae4ef;    
+}
+    
+    
+}
+
+
+
+
+
+
+
+

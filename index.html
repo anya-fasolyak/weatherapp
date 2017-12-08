@@ -23,7 +23,7 @@
       <!-- Search Box -->
       <form id="location-search" class="pa4">
         <h1 class="flex flex-wrap items-baseline">
-          <span class="mr3 mb2">
+          <span class="mr3 mb2 f4">
             Weather for:
           </span>
           <input type="text" id="area" value="Boston" class="flex-auto">
@@ -31,30 +31,39 @@
       </form>
       
       <!-- Content -->
-      <div class="flex flex-wrap pa4">
-        <div class="w-100 w-50-m w-third-l">
+      <div class="pa4">
+        <div class="w-100 w-50-m w-third-l dn">
           <h2>Location</h2>
           <p>City: <span id="location-name"></span></p>
           <p>Country: <span id="country"></span></p>
         </div>
         
-        <div class="w-100 w-50-m w-third-l">
-          <h2>Temperature</h2>
-          <p>Current Temp: <span id="temp"></span></p>
-          <p>Max Temp: <span id="temp-max"></span></p>
-          <p>Min Temp: <span id="temp-min"></span></p>
+        <div class="w-100 w-50-m flex nt5">
+         <div>
+              <h2 class="temperature">Temperature</h2>
+          </div>
+            <div class="temp-copy pl3 w-40">
+              <p><span id="temp"></span></p>
+              <p><span id="temp-max"></span></p>
+              <p><span id="temp-min"></span></p>
+            </div>
         </div>
         
-        <div class="w-100 w-50-m w-third-l">
-          <h2>Weather</h2>
-          <p>Condition: <span id="condition"></span></p>
-          <p>Desription: <span id="condition-description"></span></p>
-          <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+        <div class="w-100 w-50-m flex nt6 weatherbox">
+         <div>
+              <h2 class="weather">Weather</h2>
+          </div>
+          <div class="pl3 weather-copy w-100">
+          <p><span id="condition"></span></p>
+          <p><span id="condition-description"></span></p>
+          <p><span id="wind-speed"></span>mph</p>
+          </div>
         </div>
       </div>
       
     </div>
     
+   
     <!-- Site JavaScript -->
     <script src="/javascript/toggleClass.js" charset="utf-8"></script>
     <script src="/javascript/main.js" charset="utf-8"></script>
