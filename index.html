@@ -21,24 +21,17 @@
       </div>
           
       <!-- Search Box -->
-      <form id="location-search" class="pa4">
-        <h1 class="flex flex-wrap items-baseline">
-          <span class="mr3 mb2 f4">
-            Weather for:
-          </span>
-          <input type="text" id="area" value="Boston" class="flex-auto">
-        </h1>
-      </form>
+      
       
       <!-- Content -->
-      <div class="pa4">
+      <div class="pl4">
         <div class="w-100 w-50-m w-third-l dn">
           <h2>Location</h2>
           <p>City: <span id="location-name"></span></p>
           <p>Country: <span id="country"></span></p>
         </div>
         
-        <div class="w-100 w-50-m flex nt5">
+        <div class="w-100 w-50-m flex mt2">
          <div>
               <h2 class="temperature">Temperature</h2>
           </div>
@@ -49,17 +42,26 @@
             </div>
         </div>
         
-        <div class="w-100 w-50-m flex nt6 weatherbox">
+        <div class="w-50-m flex nt6 weatherbox">
          <div>
               <h2 class="weather">Weather</h2>
           </div>
-          <div class="pl3 weather-copy w-100">
+          <div class="pl3 weather-copy w-15">
           <p><span id="condition"></span></p>
           <p><span id="condition-description"></span></p>
           <p><span id="wind-speed"></span>mph</p>
           </div>
         </div>
       </div>
+      
+      <form id="location-search" class="pl4 pb4 nt4">
+        <h1 class="flex flex-wrap items-baseline">
+          <span class="mr3 mb2 f4 search white">
+            Weather for:
+          </span>
+          <input type="text" id="area" value="Boston">
+        </h1>
+      </form>
       
     </div>
     
